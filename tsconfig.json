@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2020",
+    "importsNotUsedAsValues": "remove",
+    "moduleResolution": "node",
+    "sourceMap": true,
+
+    "lib": ["es6"]
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
