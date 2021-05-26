@@ -11,7 +11,7 @@ export const PLUGIN_PATH = path.normalize(
 })
 export class KeeperModule {
   public static async registerPluginsAsync(): Promise<DynamicModule> {
-    return this.loadPlugins();
+    return this.loadPlugins(); /**@Todo need fix */
   }
 
   private static loadPlugins(): Promise<DynamicModule> {
@@ -35,8 +35,8 @@ export class KeeperModule {
   }
 
   private static loadPlugin(pluginPath: string): Promise<DynamicModule> {
-    const modulePlugin = import(pluginPath);
-    return modulePlugin;
+    //  const modulePlugin = import(pluginPath);
+    return (async () => [] as any)();
   }
 
   private static searchPluginsInFolder(folder: string): string[] {
